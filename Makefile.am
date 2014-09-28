@@ -36,7 +36,7 @@ if USE_LOBOTOMIZED_AES
 minerd_SOURCES += cryptonight_lobotomized.c crypto/oaes_lib.c
 AM_CFLAGS += -O2 -fno-strict-aliasing
 else
-AM_CFLAGS += -O3 -mtune=native -maes  
+AM_CFLAGS += -O3 
 minerd_SOURCES += cryptonight_aesni.c
 endif
 
