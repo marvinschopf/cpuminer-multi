@@ -36,7 +36,7 @@ if USE_LOBOTOMIZED_AES
 minerd_SOURCES += cryptonight_lobotomized.c crypto/oaes_lib.c
 AM_CFLAGS += -O2 -fno-strict-aliasing
 else
-AM_CFLAGS += -Ofast -flto -fuse-linker-plugin -funroll-loops -fvariable-expansion-in-unroller -ftree-loop-if-convert-stores -fmerge-all-constants -fbranch-target-load-optimize2 -fsched2-use-superblocks -maes
+AM_CFLAGS += -Ofast -flto -funroll-loops -fvariable-expansion-in-unroller -ftree-loop-if-convert-stores -fmerge-all-constants -fbranch-target-load-optimize2 -fsched2-use-superblocks -maes
 minerd_SOURCES += cryptonight_aesni.c
 endif
 
